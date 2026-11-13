@@ -83,9 +83,7 @@ Tổng hợp 8 dòng: `position` 3, `vis_flag` 1, `ok` 3, nghi vấn `lr_swap` 1
 | `DuongQuangChung_person.zip` | `000000157271.jpg`, annotation ID 8 | 51 | 14 điểm `v=2`, 1 điểm `v=1`, 2 điểm `v=0` | Có, 15 |
 | `DuongQuangChung_faces.zip` | `face_324513.jpg`, mặt kính râm | 39 | 5 điểm `v=2`, 8 điểm mắt `v=0` | Có, 5 |
 
-Trong file người, `occluded` xuất thành `v=1`, `outside` xuất thành `v=0`. Một số điểm `v=0` vẫn mang tọa độ cũ. Cả hai ZIP không kèm ảnh. File người hiện có hậu tố `_person.zip`, trong khi mẫu nộp dùng `_persons.zip`. Dùng tên theo yêu cầu khi xuất bản cuối.
 
-Trạng thái ở lần kiểm tra trước: **job #14 và #15 đều là Annotation / In progress**, chưa chuyển sang Completed. Lần truy cập lại ngày 13/11/2026, giao diện CVAT tải được nhưng báo `Required services are not healthy`: `OPAHealthCheck` trả lỗi HTTP 500 từ `http://opa:8181/health?bundles`. Chưa mở lại được job để xác minh thay đổi mới.
 
 ```text
 
