@@ -132,7 +132,7 @@ Các cảnh báo và điểm cần rà trước khi xuất lại:
 {"id": 1, "image_id": 1, "category_id": 1, "keypoints": [209.51, 126.76, 2, 206.55, 112.27, 2, 190.32, 126.12, 2, 220.15, 112.31, 0, 173.94, 164.95, 2, 308.4, 181.39, 2, 195.13, 203.56, 2, 348.23, 225.14, 2, 165.0, 279.17, 2, 335.58, 154.95, 2, 152.72, 225.6, 2, 304.61, 375.82, 2, 223.85, 378.59, 2, 328.07, 459.15, 2, 225.33, 453.61, 2, 352.94, 537.55, 2, 222.62, 527.85, 2], "num_keypoints": 16}
 ```
 
-Ảnh chụp JSON theo yêu cầu mục này chưa có; các bước chụp được ghi trong `HUONG_DAN_HOAN_TAT.md`.
+![Ảnh chụp JSON COCO Keypoints với các trường keypoints và num_keypoints](images/4_json_export.png)
 
 Nguồn ảnh: bộ dữ liệu của lab, chi tiết trong `src/lab/pool.json` và `src/lab/NGUON_ANH.md`.
 
