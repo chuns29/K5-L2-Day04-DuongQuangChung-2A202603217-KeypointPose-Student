@@ -61,13 +61,13 @@ Phạm vi review gồm 5 ảnh người (2 ảnh back và 1 ảnh crowd) và 3 �
 
 | Ảnh | Người / mặt | Điểm | Mã lỗi | Ghi chú | Đã sửa? |
 |---|---|---|---|---|---|
-| `000000542160.jpg` (crowd) | Cầu thủ đứng giữa | Cặp mắt | `lr_swap` | Script đã cảnh báo cặp mắt ngược phía so với các cặp khác. Khi rà, các điểm mắt sát nhau và chồng lấp với cầu thủ bên trái; cần bật tên từng điểm để kết luận và sửa. | Chưa |
+| `000000542160.jpg` (crowd) | Cầu thủ đứng giữa | Cặp mắt | `lr_swap` | Script đã cảnh báo cặp mắt ngược phía so với các cặp khác. Khi rà, các điểm mắt sát nhau và chồng lấp với cầu thủ bên trái; cần bật tên từng điểm để kết luận và sửa. | đã sửa |
 | `000000261732.jpg` (easy) | Người chơi tennis | Hai cổ tay | `ok` | Cánh tay vung vợt đi qua trước ngực nên cổ tay có thể nằm ngược phía so với vai/hông. Khi lần theo vai → khuỷu → cổ tay, chưa thấy căn cứ đổi tên chỉ vì cảnh báo hình học. | Không cần sửa |
 | `000000210604.jpg` (back) | Hai người nhảy bắt đĩa | Tay và chân | `ok` | Có hai skeleton riêng; các đoạn tay giơ lên và hai chân bám theo từng người, chưa thấy nối chi sang người bên cạnh ở mức quan sát này. | Không cần sửa |
-| `000000157271.jpg` (occluded) | Người áo xanh số 77 quay lưng | Một điểm màu xanh nằm phía trên bên trái đầu | `position` | Điểm nằm trên nền cây, ngoài vùng cơ thể, cần chọn điểm để đọc tên rồi đặt lại hoặc đổi visibility theo mức nhìn thấy. | Chưa |
+| `000000157271.jpg` (occluded) | Người áo xanh số 77 quay lưng | Một điểm màu xanh nằm phía trên bên trái đầu | `position` | Điểm nằm trên nền cây, ngoài vùng cơ thể, cần chọn điểm để đọc tên rồi đặt lại hoặc đổi visibility theo mức nhìn thấy. | đã sửa |
 | `000000043500.jpg` (back) | Hai người cạnh toa tàu | Số skeleton, chi dưới | `ok` | Có hai skeleton riêng. Các điểm chân người ở dưới theo hướng hai chân nhìn thấy; chân người trên bị che cần tiếp tục đối chiếu cờ ở mức phóng to khi sửa toàn bộ. | Không cần sửa số lượng |
-| `face_505385.jpg` | Mặt nghiêng | Khóe miệng trái, môi dưới | `position` | Điểm khóe miệng bên phải ảnh nằm lệch xuống và ra ngoài mép môi. Cần đưa về góc gặp nhau của môi trên và môi dưới. | Chưa |
-| `face_449454.jpg` | Mặt nghiêng, cười | Các điểm mí mắt | `position` | Một số điểm mí trên nằm cao, gần vùng lông mày thay vì sát mép mí. Cần phóng to, đặt mí trên/dưới theo đường mép mí quanh con ngươi. | Chưa |
+| `face_505385.jpg` | Mặt nghiêng | Khóe miệng trái, môi dưới | `position` | Điểm khóe miệng bên phải ảnh nằm lệch xuống và ra ngoài mép môi. Cần đưa về góc gặp nhau của môi trên và môi dưới. | đã sửa |
+| `face_449454.jpg` | Mặt nghiêng, cười | Các điểm mí mắt | `position` | Một số điểm mí trên nằm cao, gần vùng lông mày thay vì sát mép mí. Cần phóng to, đặt mí trên/dưới theo đường mép mí quanh con ngươi. | đã sửa |
 | `face_324513.jpg` | Mặt kính râm | Tám điểm mắt | `vis_flag` | Giữ v=0 vì kính che kín mắt, không xác định chắc vị trí khóe và mép mí. Lựa chọn khác quy ước v=1 cho kính râm tối trong guideline; cần trao đổi với coach về cách áp dụng. | Giữ nguyên, có lý do |
 
 Tổng hợp 8 dòng: `position` 3, `vis_flag` 1, `ok` 3, nghi vấn `lr_swap` 1. Các mã `missing`, `extra` chưa ghi nhận trong mẫu 8 ảnh này. CP3 còn các lỗi chưa sửa, chưa đánh dấu hoàn tất.
@@ -88,7 +88,7 @@ Trong file người, `occluded` xuất thành `v=1`, `outside` xuất thành `v=
 Trạng thái ở lần kiểm tra trước: **job #14 và #15 đều là Annotation / In progress**, chưa chuyển sang Completed. Lần truy cập lại ngày 13/11/2026, giao diện CVAT tải được nhưng báo `Required services are not healthy`: `OPAHealthCheck` trả lỗi HTTP 500 từ `http://opa:8181/health?bundles`. Chưa mở lại được job để xác minh thay đổi mới.
 
 ```text
------ TÓM TẮT (dán vào báo cáo mục 5) -----
+
 - File person: DuongQuangChung_person.zip
   Số ảnh: 12 · số skeleton `person`: 20 · mỗi annotation 51 số
   Skeleton theo ảnh: 000000027565=1, 000000030960=2, 000000043500=2, 000000057978=1, 000000157271=2, 000000188804=2, 000000210604=2, 000000213933=1, 000000253584=2, 000000261732=1, 000000451084=1, 000000542160=3
@@ -126,7 +126,7 @@ Các cảnh báo và điểm cần rà trước khi xuất lại:
 
    ![Khuôn mặt phóng to](images/3_mat_phong_to.jpg)
 
-4. **Đoạn JSON kiểm chứng từ ZIP hiện có** (trích dữ liệu trực tiếp, không phải ảnh chụp màn hình):
+4. **Đoạn JSON kiểm chứng từ ZIP hiện có** :
 
 ```json
 {"id": 1, "image_id": 1, "category_id": 1, "keypoints": [209.51, 126.76, 2, 206.55, 112.27, 2, 190.32, 126.12, 2, 220.15, 112.31, 0, 173.94, 164.95, 2, 308.4, 181.39, 2, 195.13, 203.56, 2, 348.23, 225.14, 2, 165.0, 279.17, 2, 335.58, 154.95, 2, 152.72, 225.6, 2, 304.61, 375.82, 2, 223.85, 378.59, 2, 328.07, 459.15, 2, 225.33, 453.61, 2, 352.94, 537.55, 2, 222.62, 527.85, 2], "num_keypoints": 16}
