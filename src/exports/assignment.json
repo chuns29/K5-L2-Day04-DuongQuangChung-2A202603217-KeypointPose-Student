@@ -1,0 +1,43 @@
+{
+ "mssv": "2A202603217",
+ "ten": "DuongQuangChung",
+ "pool_version": "d04-k5-v2",
+ "cvat_user": "chuns29",
+ "project": "d04-keypoint",
+ "persons": [
+  "000000027565.jpg",
+  "000000057978.jpg",
+  "000000213933.jpg",
+  "000000261732.jpg",
+  "000000451084.jpg",
+  "000000030960.jpg",
+  "000000157271.jpg",
+  "000000188804.jpg",
+  "000000043500.jpg",
+  "000000210604.jpg",
+  "000000253584.jpg",
+  "000000542160.jpg"
+ ],
+ "faces": [
+  "face_147624.jpg",
+  "face_257657.jpg",
+  "face_300399.jpg",
+  "face_449454.jpg",
+  "face_505385.jpg",
+  "face_168953.jpg",
+  "face_324513.jpg",
+  "face_175798.jpg"
+ ],
+ "tasks": {
+  "persons": {
+   "task_id": 14,
+   "job_id": 14,
+   "task_name": "persons-DuongQuangChung"
+  },
+  "faces": {
+   "task_id": 15,
+   "job_id": 15,
+   "task_name": "faces-DuongQuangChung"
+  }
+ }
+}
